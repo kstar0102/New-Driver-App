@@ -1,0 +1,31 @@
+import 'package:flutter_riverpod/flutter_riverpod.dart';
+
+import 'package:alwali_driver/src/features/notification/notif_repository.dart';
+import 'package:alwali_driver/src/features/notification/notif.dart';
+
+class HomeNotificationsController extends StateNotifier<AsyncValue<NotifList>> {
+  HomeNotificationsController({required this.notifRepo})
+      : super(const AsyncData([]));
+
+  final NotifRepository notifRepo;
+
+  Future<void> doFetchNotifs() async {
+    state = const AsyncValue.loading();
+    final newState = await AsyncValue.guard(() => notifRepo.doFetchNotifs());
+
+    if (mounted) {
+      state = newState;
+    }
+  }
+
+  Future<void> doReadAt(String notiID) async {
+    state = const AsyncValue.loading();
+    await AsyncValue.guard(() => notifRepo.doReadAt(notiID));
+  }
+}
+
+final homeNotificationsCtrProvider = StateNotifierProvider.autoDispose<
+    HomeNotificationsController, AsyncValue<NotifList>>((ref) {
+  return HomeNotificationsController(
+      notifRepo: ref.watch(notificationRepositoryProvider));
+});

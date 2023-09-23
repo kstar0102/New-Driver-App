@@ -1,0 +1,68 @@
+{
+  "project_info": {
+    "project_number": "171718709025",
+    "project_id": "alnabaliapp",
+    "storage_bucket": "alnabaliapp.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:171718709025:android:71857581284d8b8825f860",
+        "android_client_info": {
+          "package_name": "com.mayaal.alwalidriver"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "171718709025-9em9onj7a5ekmu7u940be13nubuou1j2.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCB1kU6T7OxTLl9tXbV-gAKEnWhochnVEY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "171718709025-9em9onj7a5ekmu7u940be13nubuou1j2.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:171718709025:android:355836afed995aa425f860",
+        "android_client_info": {
+          "package_name": "com.mayaal.alwalisupervisor"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "171718709025-9em9onj7a5ekmu7u940be13nubuou1j2.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCB1kU6T7OxTLl9tXbV-gAKEnWhochnVEY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "171718709025-9em9onj7a5ekmu7u940be13nubuou1j2.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
